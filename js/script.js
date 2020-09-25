@@ -15,13 +15,12 @@ const personalMovieDB = {
     genres : [],
     private : false 
 };
+  
+ for(let i = 0; i < 2; i++) {
+    const a = prompt('Один из просмотреных фильмов?',''),
+          b = prompt('На сколько вы его оцените?','');
 
-const a = prompt('Один из просмотреных фильмов?',''),
-      b = prompt('На сколько вы его оцените?',''),
-      c = prompt('Один из просмотреных фильмов?',''),
-      d = prompt('На сколько вы его оцените?','');
+    personalMovieDB.movies[a] = b;
+ }
 
- personalMovieDB.movies[a] = b;
- personalMovieDB.movies[c] = d;
- 
  console.log(personalMovieDB);
